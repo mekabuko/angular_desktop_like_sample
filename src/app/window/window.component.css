@@ -1,0 +1,51 @@
+.container {
+  left: 100px;
+  top:100px;
+  position: relative;
+  background-color: gray;
+}
+
+.full {
+  width: 100%;
+  background: yellow;
+}
+
+.dragHandle {
+  position: absolute;
+  background-color: red;
+}
+
+.dragHandle.corner.right.bottom {
+  width: 10px;
+  height: 10px;
+  opacity: 0.5;
+  cursor: nwse-resize;
+}
+
+.dragHandle.left {
+  width: 5px;
+  opacity: 0.5;
+  height: 100%;
+  cursor: ew-resize;
+}
+
+.dragHandle.right {
+  width: 5px;
+  opacity: 0.5;
+  height: 100%;
+  cursor: ew-resize;
+}
+
+.dragHandle.top {
+  height: 5px;
+  opacity: 0.5;
+  width: 100%;
+  cursor: ns-resize;
+}
+
+.dragHandle.bottom {
+  height: 5px;
+  opacity: 0.5;
+  width: 100%;
+  cursor: ns-resize;
+}

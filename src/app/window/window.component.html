@@ -1,0 +1,9 @@
+<div #resizeBox class="container" style="position: relative;" [style.width.px]="width"
+  [style.height.px]="height">
+  <span #dragHandleCorner [cdkDragLockAxis]="lockAxis" class="dragHandle corner right bottom" cdkDrag (cdkDragMoved)="dragMove(dragHandleCorner, $event)"></span>
+  <span #dragHandleLeft cdkDragLockAxis="x" class="dragHandle left" cdkDrag (cdkDragMoved)="dragMove(dragHandleLeft, $event)"></span>
+  <span #dragHandleRight cdkDragLockAxis="x" class="dragHandle right" cdkDrag (cdkDragMoved)="dragMove(dragHandleRight, $event)"></span>
+  <span #dragHandleTop cdkDragLockAxis="y" class="dragHandle top" cdkDrag (cdkDragMoved)="dragMove(dragHandleTop, $event)"></span>
+  <span #dragHandleBottom cdkDragLockAxis="y" class="dragHandle bottom" cdkDrag (cdkDragMoved)="dragMove(dragHandleBottom, $event)"></span>
+  <span class="full" style="width: 100%;">Hello World!</span>
+</div>
